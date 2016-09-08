@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [ ! -d "./browserify" ]; then
+    git clone https://github.com/Sable/ostrich-browserify-compiler browserify
+    cd browserify
+    wu install
+    rm compiler.json
+fi
