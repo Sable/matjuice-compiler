@@ -10,9 +10,19 @@
     ],
     "runner-name":"runner.js",
     "commands": [
-        {   "executable-path": { "file": "./release/matjuice-v1.0.0/matjuice" },
+        {   "executable-path": { "file": "./matlab-concat/cat-with-nl"},
             "options": [
-                { "config": "/implementation/runner-source-file" },
+                { "config": "/implementation/runner-source-file"},
+                { "config": "/implementation/core-source-files", "optional": true },
+                { "config": "/implementation/libraries", "optional": true },
+                ">",
+                "runner.m" 
+            ]
+        },
+        {   
+            "executable-path": { "file": "./release/matjuice-v1.0.0/matjuice" },
+            "options": [
+                "runner.m",
                 "unbundled.js",
                 { "config": "/implementation/mclab-core-runner-argument-types" }
             ]
@@ -30,6 +40,10 @@
         {
             "source": "https://github.com/Sable/matjuice/releases/download/v1.0.0/matjuice-v1.0.0.tar.gz",
             "destination": { "file": "./release" }
+        },
+        {
+            "source": "https://github.com/Sable/ostrich-matlab-concatenate-compiler.git",
+            "destination": { "file": "./matlab-concat" }
         }
     ]
 }
