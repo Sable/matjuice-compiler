@@ -10,13 +10,26 @@
     ],
     "runner-name":"runner.js",
     "commands": [
-        {   "executable-path": { "file": "./release/matjuice" },
+        {   "executable-path": { "file": "./release/matjuice-v1.0.0/matjuice" },
             "options": [
                 { "config": "/implementation/runner-source-file" },
-                { "config": "/compiler/runner-name" },
-                { "config": "/implementation/mclab-core-argument-types" }
+                "unbundled.js",
+                { "config": "/implementation/mclab-core-runner-argument-types" }
+            ]
+        },
+        {   "executable-path": { "file": "./browserify/bin/cmd.js" },
+            "options": [
+                "-f ",
+                "unbundled.js",
+                "-o ",
+                { "config": "/compiler/runner-name" }
             ]
         }
-    ] 
-
+    ],
+    "dependencies": [
+        {
+            "source": "https://github.com/Sable/matjuice/releases/download/v1.0.0/matjuice-v1.0.0.tar.gz",
+            "destination": { "file": "./release" }
+        }
+    ]
 }
