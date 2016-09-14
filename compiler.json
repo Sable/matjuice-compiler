@@ -44,6 +44,10 @@
         {
             "source": "https://github.com/Sable/ostrich-matlab-concatenate-compiler.git",
             "destination": { "file": "./matlab-concat" }
+        },
+        {
+            "source": "https://github.com/Sable/ostrich-browserify-compiler.git",
+            "destination": { "file": "./browserify" }
         }
     ]
 }
