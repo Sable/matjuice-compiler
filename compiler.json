@@ -1,6 +1,6 @@
 {
     "type": "compiler",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "short-name":"matjuice",
     "supported-languages":[
         "matlab"
@@ -38,7 +38,7 @@
     ],
     "dependencies": [
         {
-            "source": "https://github.com/Sable/matjuice/releases/download/v1.0.0/matjuice-v1.0.0.tar.gz",
+            "source": "https://github.com/Sable/matjuice/releases/download/v1.0.1/matjuice-v1.0.1.tar.gz",
             "destination": { "file": "./release" }
         },
         {
