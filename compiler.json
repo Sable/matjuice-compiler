@@ -20,7 +20,7 @@
             ]
         },
         {   
-            "executable-path": { "file": "./release/matjuice-v1.0.0/matjuice" },
+            "executable-path": { "file": "./release/matjuice-v1.0.1/matjuice" },
             "options": [
                 "runner.m",
                 "unbundled.js",
